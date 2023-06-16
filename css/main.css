@@ -1,188 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P01 - Possum Pet Company</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="title">
+      <h1 id="company_name">Possum Pet Company</h1>  
+      <h5 id="slogan"> "Providing quality petcare with caring prices" </h5>
+      <i class="material-icons">pets</i>
+    </div> <!--end of tile div  -->
+
+    <nav>
+      <a href="#interactive_elements">Interactive Elements</a>
+      <a href="#text_elements">Text Elements</a>
+      <a href="#combined_elements">Combined Elements</a>
+      <a href="#product_listing">Product Listing Template</a>
+      <a href="#checkout">Checkout Template</a>
+      <a href="#citations">Citations</a>
+      <div class="searchElement">
+        <input class="textInput" type="text" placeholder="Search..."> 
+        <button class="button"> <i class="material-icons">search</i></button>
+        <button class="button"> <i class="material-icons">shopping_cart</i></button>
+      </div>
+
+      <!-- nav bar and icon help:
+        https://www.w3schools.com/icons/
+        https://www.w3schools.com/howto/howto_css_searchbar.asp
+      -->
+    </nav>
+
+  </header>
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <div id="pageContent">
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <p> A link to <a target="_blank" href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwi4govZ1P_-AhVjNn0KHcKsAk4QPAgI">Google</a></p>
+      </section>
 
 
-/*NAVIGATION AND HEADER STYLING*/
+      <!-- Default Button styling section -->
+      <section class="element">
 
-/*Padding & Margin: top, right, bottom left*/
+        <h3>Navigation Link</h3>
 
-header{
-  padding-top:1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  background-color:#2e2e2e;
-}
+        <a href="#"><button class="button">Default Button</button></a>
 
-.title{
-  margin:0;
-  padding-left:1em;
-  padding-right: 2em;
-  color:white;
-}
-
-#slogan{
-  font-style: italic;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-nav{
-  width: 100%;
-  background-color:#2e2e2e;
-}
-
-nav a {
-  font-weight: normal;
-  text-decoration: none;
-  padding:1em;
-  color:#94ff70;
-}
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
-  color:white;
-  background-color:#383838;
-  transition: background-color 0.25s ease;
-}
-
-.searchElement{
-  padding:0.5em 0 0.5em 0;
-}
+      </section>
 
 
-/*BODY STYLING*/
-
-body {
-  font-family: Signika-Regular, Arial, sans-serif;
-  }
-
-#pageContent{
-  margin-left:1em;
-}
-
-.element {
-  padding-bottom: 1rem;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: lightgrey;
-}
-
-h1{
-  font-family: BagelFatOne, Arial,sans-serif;
-}
-
-h2 {
-  font-family: Signika-Bold, Arial, sans-serif;
-  margin-top: 0.5rem;
-}
-
-h3 {
-  margin-top: 1rem;
-}
-
-h4 {
-  margin-bottom: 0.25rem;
-}
-
-h5{
-}
-
-p {
-  font-family:Signika-Light, Arial, sans-serif;
-  margin-top: 0;
-  max-width: 60em;
-}
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <button class="button" type="button">Submit</button>
+        <button class="resetBut" type="button">Reset</button>
+      </section>
 
 
-code {
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
-}
-
-section{
-  margin: 0.25rem 0 0.25rem 0;
-}
-
-
-}
-/*Help from https://stackoverflow.com/questions/54308139/how-to-show-placeholder-when-we-hover-on-input-type-text*/
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <form>
+          <label> Text Input</label>
+          <input class="textInput" type="text" placeholder="   Input text here">
+        </form>
+        <!--Help from: https://www.w3schools.com/html/html_forms.asp-->
+      </section>
 
 
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <form>
+          <input type="radio" id="firstChoice" value="firstChoice" name="choices">
+          <label for="firstChoice">First Choice</label><br>
+          <input type="radio" id="secondChoice" value="secondChoice" name="choices">
+          <label for="secondChoice">Second Choice</label><br>
+          <input type="radio" id="thirdChoice" value="thirdChoice" name="choices">
+          <label for="thirdChoice">Third Choice</label>
 
-/*Styling anchor tag*/
-a{
-  color:#101a11;
-  font-weight:bold;
-  text-decoration:none;
-}
-
-a:hover, a:focus{
-  color: lightgreen;
-  text-decoration: underline;
-  transition: color 0.25s ease-out;
-
-}
-
-/*Styling image link interaction*/
-a img:hover, a img:focus{
-  opacity: 0.5;
-  transition: opacity 1s ease;
-}
-
-button{
-  background-color:#94ff70;
-}
+        </form>
+      </section>
 
 
-/* Styling for the Buttons */
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <a href="https://oliveranimalhospital.com/wp-content/uploads/2021/09/shutterstock_701554054.jpg" target="_blank"><img width="20%" alt="a dog with a chew toy" title="Image of dog with chew toy" src="https://oliveranimalhospital.com/wp-content/uploads/2021/09/shutterstock_701554054.jpg"></a>
+        <!-- Help from:https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_link   -->
+      </section>
 
-.button{
-  margin:0 0 0 0.2em;
-  padding:0.4rem;
-  background-color: #94ff70;
-  border-radius: 10px;
-  border:none;
-}
 
-.button:hover, .button:focus{
-  background-color: #45964c;
-  color:white;
-  transition-property: background-color 0.25s ease; 
-}
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-.resetBut{
-  display: inline-block;
-  padding: 0.5rem;
-  color:white;
-  background-color: black;
-  border:none;
-  border-radius: 10px;
-}
-.resetBut:hover, .button-nav:focus {
-  background-color: rgb(124, 124, 124);
-}
 
-/*Form Styling*/
 
-form{
-  padding:0.75rem;
-  display:block;
-  max-width: 40rem;
-}
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
 
-.textInput{
-  background-color:#45964c;
-  border:none;
-  border-radius: 10px;
-  height:auto;
-}
+      <section class="element">
+        <h2>Headings</h2>
+        <h1>h1 Heading</h1>
+        <h2>h2 Heading</h2>
+        <h3>h3 Heading</h3>
+        <h4>h4 Heading</h4>
+        <h5>h5 Heading</h5>
+        <h6>h6 Heading</h6>
+      </section>
 
-.textInput:hover, .textInput:focus, .textInput:active{
-  background-color: white;
-  transition: background-color 0.25s ease;
-}
-  
-/* 
-  COMBINED ELEMENTS -------------------
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet, leo et blandit dapibus, risus est semper mi, nec hendrerit sem libero venenatis mi. Quisque consectetur lacus risus, et ornare eros ultricies sit amet. Donec odio enim, congue scelerisque lorem a, maximus venenatis magna. Duis eleifend malesuada arcu. Ut consequat leo ac tellus tempor consequat. Morbi condimentum molestie lacinia. Suspendisse a odio commodo risus rutrum lobortis nec in lacus. Duis sit amet ultricies risus, vel vehicula nunc. Aliquam erat volutpat. Ut tempor venenatis maximus. Pellentesque vulputate quis sapien ac finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut quis euismod magna, quis scelerisque odio. Praesent vulputate nec ipsum vitae eleifend. Fusce nec dolor vel magna accumsan condimentum et eu dui.</p>
+
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <ol>
+          <li>First Item</li>
+          <li>Second Item</li>
+          <li>Third Item</li>
+          <li>...</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <nav>
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="#product_listing">Product Listing Template</a>
+          <a href="#checkout">Checkout Template</a>
+          <a href="#citations">Citations</a>
+          <div class="searchElement">
+            <input class="textInput" type="text" placeholder="Search..."> 
+            <button class="button"> <i class="material-icons">search</i></button>
+            <button class="button"> <i class="material-icons">shopping_cart</i></button>
+          </div>
+        </nav>
+      </section>
+
+      <section class="element" id="product_listing">
+        <h3>Product/Service Listing</h3>
+        <div class="productListings">
+
+          <div class="productTemplate">
+
+            <a  href="https://www.amazon.ca/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAYKQ?th=1"><img class="listingImg"src="https://m.media-amazon.com/images/I/819CtUXMphL.jpg"alt="blue dog collar" title="Blueberry pet classic dog collar"></a>
+
+            <h3 class="listingTitle"><a href="https://www.amazon.ca/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAYKQ?th=1">Blueberry Pet Classic Dog Collar</a></h3>
+
+
+            <div class="stars">
+             <i class="material-icons">star_outline</i>
+             <i class="material-icons">star_outline</i>
+             <i class="material-icons">star_outline</i>
+             <i class="material-icons">star_outline</i>
+             <i class="material-icons">star_outline</i>
+             <h6> (0)</h6>
+           </div><!-- end of stars -->
+           <p>Nylon fabric with high density webbing to add durability; Those buckles are made from ecofriendly plastic. The metal D ring is chrome coated to add durability. </p>
+           <a href="#checkout" class="listingCheckout"><button class="button listingCart"> <i class="material-icons">add_shopping_cart</i></button></a>
+         </div><!-- end of productTemplate -->
+
+         <div class="productTemplate">
+
+          <a href="https://www.amazon.ca/Kong-Classic-Dog-Toy-Medium/dp/B000AYN7LU"><img class="listingImg" src="https://m.media-amazon.com/images/I/61TlwhGwa0L.jpg" alt="KONG classic dog toy" title="KONG classic dog toy"></a>
+
+          <a href="https://www.amazon.ca/Kong-Classic-Dog-Toy-Medium/dp/B000AYN7LU"><h3 class="listingTitle">KONG - Classic Dog Toy</h3></a>
+          <div class="stars">
+           <i class="material-icons">star_outline</i>
+           <i class="material-icons">star_outline</i>
+           <i class="material-icons">star_outline</i>
+           <i class="material-icons">star_outline</i>
+           <i class="material-icons">star_outline</i>
+           <h6> (0)</h6>
+         </div><!-- end of stars -->
+         <p>Fetch Toy: The KONG Classic's unpredictable bounce makes for exciting games of fetch and other interactive play with your pet. This is a fun way for average chewers to get the exercise they need. </p>
+           <a href="#checkout" class="listingCheckout"><button class="button"> <i class="material-icons">add_shopping_cart</i></button></a>
+       </div> <!-- end of productTemplate -->
+
+     </div><!--end of productListings -->
+   </section>
+
+   <section class="element">
+    <h3>Payment Form</h3>
+  </section>
+
+  <section class="element" id="checkout">
+    <h3>Checkout Cart</h3>
+  </section>
+
+</section>
+<!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+<section id="citations">
+  <h2>Citations</h2>
+
+  <ul>
+    <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+    <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+  </ul>
+
+</section>
+</div><!--  end of pageContent-->
+
+
+</body>
+</html>

@@ -1,3 +1,8 @@
+/*GENERAL FLEX*/
+
+.button{
+	align-items: center;
+}
 
 /*NAVIGATION BAR*/
 
@@ -18,7 +23,28 @@ nav{
 	align-items: stretch;
 }
 
-.button{
-	align-items: center;
+/*PRODUCT LISTING*/
+
+/*PRODUCT LISTINGS*/
+
+.productListings{
+	display: grid;
+	grid-template-rows: 1fr, 1fr, 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.productTemplate{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-right:1em;
+}
+
+.stars{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
