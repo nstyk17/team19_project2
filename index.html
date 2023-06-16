@@ -18,9 +18,9 @@
 
   <header>
     <div class="title">
-      <h1 id="company_name">Possum Pet Company</h1>  
-      <h5 id="slogan"> "Providing quality petcare with caring prices" </h5>
+      <h1 id="companyName">Possum Pet Company</h1>  
       <i class="material-icons">pets</i>
+      <h5 id="slogan"> "Providing quality petcare with caring prices" </h5>
     </div> <!--end of tile div  -->
 
     <nav>
@@ -67,8 +67,10 @@
 
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
-        <button class="button" type="button">Submit</button>
-        <button class="resetBut" type="button">Reset</button>
+        <div class="basicFlex">
+          <button class="button" type="button">Submit</button>
+          <button class="resetBut" type="button">Reset</button>
+        </div>
       </section>
 
 
@@ -150,31 +152,42 @@
       <section class="element">
         <h3>Main Navigation</h3>
         <nav>
-          <a href="#interactive_elements">Interactive Elements</a>
-          <a href="#text_elements">Text Elements</a>
-          <a href="#combined_elements">Combined Elements</a>
-          <a href="#product_listing">Product Listing Template</a>
-          <a href="#checkout">Checkout Template</a>
-          <a href="#citations">Citations</a>
+          <a href="#">About</a>
+          <a href="#">Shop By Pet</a>
+          <a href="#">Deals</a>
+          <a href="#">Services</a>
+          <a href="#">Contact Us</a>
           <div class="searchElement">
-            <input class="textInput" type="text" placeholder="Search..."> 
+            <input class="textInput" type="search" placeholder="Search..."> 
             <button class="button"> <i class="material-icons">search</i></button>
             <button class="button"> <i class="material-icons">shopping_cart</i></button>
           </div>
         </nav>
       </section>
 
+      <!-- START OF PRODUCT LISTINGS -->
+
       <section class="element" id="product_listing">
         <h3>Product/Service Listing</h3>
         <div class="productListings">
 
+          <!-- Single product listing -->
           <div class="productTemplate">
 
-            <a  href="https://www.amazon.ca/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAYKQ?th=1"><img class="listingImg"src="https://m.media-amazon.com/images/I/819CtUXMphL.jpg"alt="blue dog collar" title="Blueberry pet classic dog collar"></a>
+            <!-- Anchor leading to product page -->
+            <a  target="_blank" href="https://www.amazon.ca/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAYKQ?th=1">
 
-            <h3 class="listingTitle"><a href="https://www.amazon.ca/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAYKQ?th=1">Blueberry Pet Classic Dog Collar</a></h3>
+              <!-- Image source -->
+              <img class="listingImg"src="https://m.media-amazon.com/images/I/819CtUXMphL.jpg"alt="blue dog collar" title="Blueberry pet classic dog collar">
 
+              <!-- Product Title -->
+              <h3 class="listingTitle">Blueberry Pet Classic Dog Collar</h3>
 
+              <!-- Product price -->
+              <h4 class="listingTitle">$36.58</h4>              
+            </a><!-- end of the listing anchor-->
+
+            <!-- Product rating -->
             <div class="stars">
              <i class="material-icons">star_outline</i>
              <i class="material-icons">star_outline</i>
@@ -183,15 +196,23 @@
              <i class="material-icons">star_outline</i>
              <h6> (0)</h6>
            </div><!-- end of stars -->
-           <p>Nylon fabric with high density webbing to add durability; Those buckles are made from ecofriendly plastic. The metal D ring is chrome coated to add durability. </p>
+
+           <!-- Adding product to cart -->
            <a href="#checkout" class="listingCheckout"><button class="button listingCart"> <i class="material-icons">add_shopping_cart</i></button></a>
-         </div><!-- end of productTemplate -->
+         </div><!-- end of productTemplate 1-->
 
          <div class="productTemplate">
 
-          <a href="https://www.amazon.ca/Kong-Classic-Dog-Toy-Medium/dp/B000AYN7LU"><img class="listingImg" src="https://m.media-amazon.com/images/I/61TlwhGwa0L.jpg" alt="KONG classic dog toy" title="KONG classic dog toy"></a>
+          <a target="_blank" href="https://www.amazon.ca/Kong-Classic-Dog-Toy-Medium/dp/B000AYN7LU">
 
-          <a href="https://www.amazon.ca/Kong-Classic-Dog-Toy-Medium/dp/B000AYN7LU"><h3 class="listingTitle">KONG - Classic Dog Toy</h3></a>
+            <img class="listingImg" src="https://m.media-amazon.com/images/I/61TlwhGwa0L.jpg" alt="KONG classic dog toy" title="KONG classic dog toy">
+
+            <h3 class="listingTitle">KONG - Classic Dog Toy</h3>  
+
+
+            <h4 class="listingTitle">$18.60</h4>
+          </a><!-- end of the listing anchor-->
+
           <div class="stars">
            <i class="material-icons">star_outline</i>
            <i class="material-icons">star_outline</i>
@@ -200,37 +221,244 @@
            <i class="material-icons">star_outline</i>
            <h6> (0)</h6>
          </div><!-- end of stars -->
-         <p>Fetch Toy: The KONG Classic's unpredictable bounce makes for exciting games of fetch and other interactive play with your pet. This is a fun way for average chewers to get the exercise they need. </p>
-           <a href="#checkout" class="listingCheckout"><button class="button"> <i class="material-icons">add_shopping_cart</i></button></a>
-       </div> <!-- end of productTemplate -->
+         <a href="#checkout" class="listingCheckout"><button class="button"> <i class="material-icons">add_shopping_cart</i></button></a>
+       </div> <!-- end of productTemplate 2-->
 
-     </div><!--end of productListings -->
-   </section>
 
-   <section class="element">
-    <h3>Payment Form</h3>
-  </section>
+       <div class="productTemplate">
 
-  <section class="element" id="checkout">
-    <h3>Checkout Cart</h3>
-  </section>
+        <a target="_blank" href="https://www.chico.ca/en/product/performatrin-ultra-grain-free-original-recipe-dog-food/">
 
+          <img class="listingImg" src="https://www.chico.ca/wp-content/uploads/2022/11/6402384-scaled.jpg" alt="Performatrin Ultra Grain-Free Dog Food" title="Performatrin Ultra Grain-Free Dog Food">
+
+          <h3 class="listingTitle">Performatrin Ultra Grain-Free Dog Food</h3>  
+
+
+          <h4 class="listingTitle">$26.99 - $92.99</h4>
+        </a><!-- end of the listing anchor-->
+
+        <div class="stars">
+         <i class="material-icons">star_outline</i>
+         <i class="material-icons">star_outline</i>
+         <i class="material-icons">star_outline</i>
+         <i class="material-icons">star_outline</i>
+         <i class="material-icons">star_outline</i>
+         <h6> (0)</h6>
+       </div><!-- end of stars -->
+       <a href="#checkout" class="listingCheckout"><button class="button"> <i class="material-icons">add_shopping_cart</i></button></a>
+     </div> <!-- end of productTemplate 3-->
+
+
+     <div class="productTemplate">
+
+      <a target="_blank" href="https://www.amazon.ca/Cat-Bed-Anti-Slip-Resilience-Comfortable/dp/B08JYWMCX6">
+
+        <img class="listingImg" src="https://m.media-amazon.com/images/I/81L+i3aIu7L.jpg" alt="Heart Pet Bed for Cats or Small Dogs" title="Heart Pet Bed for Cats or Small Dogs">
+
+        <h3 class="listingTitle">Heart Pet Bed for Cats or Small Dogs</h3>  
+
+
+        <h4 class="listingTitle">$78.01</h4>
+      </a><!-- end of the listing anchor-->
+
+      <div class="stars">
+       <i class="material-icons">star_outline</i>
+       <i class="material-icons">star_outline</i>
+       <i class="material-icons">star_outline</i>
+       <i class="material-icons">star_outline</i>
+       <i class="material-icons">star_outline</i>
+       <h6> (0)</h6>
+     </div><!-- end of stars -->
+     <a href="#checkout" class="listingCheckout"><button class="button"> <i class="material-icons">add_shopping_cart</i></button></a>
+   </div> <!-- end of productTemplate 4-->
+
+   <div class="productTemplate">
+
+    <a target="_blank" href="https://www.amazon.ca/Made4Pets-Featuring-Covering-Scratching-Capsule/dp/B088WWJHHH">
+
+      <img class="listingImg" src="https://m.media-amazon.com/images/I/71wg9qriZxL.jpg" alt="Cat Tower Wood Condo with Natural Sisal Ropes " title="Cat Tower Wood Condo with Natural Sisal Ropes ">
+
+      <h3 class="listingTitle">Heart Pet Bed for Cats or Small Dogs</h3>  
+
+
+      <h4 class="listingTitle">$199.99</h4>
+    </a><!-- end of the listing anchor-->
+
+    <div class="stars">
+     <i class="material-icons">star_outline</i>
+     <i class="material-icons">star_outline</i>
+     <i class="material-icons">star_outline</i>
+     <i class="material-icons">star_outline</i>
+     <i class="material-icons">star_outline</i>
+     <h6> (0)</h6>
+   </div><!-- end of stars -->
+   <a href="#checkout" class="listingCheckout"><button class="button"> <i class="material-icons">add_shopping_cart</i></button></a>
+ </div> <!-- end of productTemplate 5-->
+
+
+
+ <div class="productTemplate">
+
+  <a target="_blank" href="https://www.amazon.ca/TEMPTATIONS-Classic-Treats-Savory-Salmon/dp/B01MRZ20T9">
+
+    <img class="listingImg" src="https://m.media-amazon.com/images/I/81ZuDuifX9L.jpg" alt="TEMPTATIONS Classic Treats for Cats Savory Salmon Flavor" title="TEMPTATIONS Classic Treats for Cats Savory Salmon Flavor">
+
+    <h3 class="listingTitle">TEMPTATIONS Classic Treats for Cats Savory Salmon Flavor</h3>  
+
+
+    <h4 class="listingTitle">$59.12</h4>
+  </a><!-- end of the listing anchor-->
+
+  <div class="stars">
+   <i class="material-icons">star_outline</i>
+   <i class="material-icons">star_outline</i>
+   <i class="material-icons">star_outline</i>
+   <i class="material-icons">star_outline</i>
+   <i class="material-icons">star_outline</i>
+   <h6> (0)</h6>
+ </div><!-- end of stars -->
+ <a href="#checkout" class="listingCheckout"><button class="button"> <i class="material-icons">add_shopping_cart</i></button></a>
+</div> <!-- end of productTemplate 6-->
+
+</div><!--end of productListings -->
 </section>
-<!-- // COMBINED ELEMENTS SECTION -->
+
+<!-- END OF PRODUCT LISTINGS -->
+
+<!-- PAYMENT FORM -->
+
+<section class="element">
+  <h3>Payment Form</h3>
+
+  <form class="paymentForm">
+    <h3 class="formSection">Contact Information</h3>
+
+    <label for="firstname"> First Name
+      <input type="text" name="payment" id="firstname" placeholder="John" class="textInput payForm"></label>
+
+      <label for="lastname"> Last Name
+        <input type="text" name="payment" id="lastname" placeholder="Doe" class="textInput payForm"></label>
+
+
+        <label for="email"> Email
+          <input type="email" name="payment" id="email" placeholder="name@email.com" class="textInput payForm"></label>
+
+          <label for="phone"> Phone Number
+            <input type="tel" name="payment" id="phone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="9" class="textInput payForm"> </label>
+
+
+            <h3>Address</h3>
+
+            <label for="street"> Street</label>
+            <input type="text" name="payment" id="street" placeholder="Street Name" class="textInput payForm">
+
+            <label for="city"> City</label>
+            <input type="text" name="payment" id="city" placeholder="City Name" class="textInput payForm">
+
+            <label for="province"> Province/Territory
+              <select id="province" name="payment">
+                <option value="alberta">Alberta</option>
+                <option value="bc">British Columbia</option>
+                <option value="manitoba">Manitoba</option>
+                <option value="newfoundland_labrador">Newfoundland and Labrador</option>
+                <option value="northwest_territories">Northwest Territories</option>
+                <option value="nova_scotia">Nova Scotia</option>
+                <option value="nunavutk">Nunavut</option>
+                <option value="ontario">Ontario</option>
+                <option value="prince_edward_island">Prince Edward Island</option>
+                <option value="quebec">Quebec</option>
+                <option value="saskatchewan">Saskatchewan</option>
+                <option value="yukon">Yukon</option>
+
+              </select></label>
+
+              <label for="country"> Countries
+                <select id="country" name="payment">
+                  <option value="canada">Canada</option>
+                </select></label>
+
+                <label for="zip"> Zip Code
+                  <input type="text" name="payment" id="zip" placeholder="000 000" class="textInput payForm"></label>
+
+                  <h3>Payment Information</h3>
+                  <label for="holderName"> Card Holder Name
+                    <input type="text" name="payment" id="holderName" placeholder="John Doe" class="textInput payForm"></label>
+
+                    <label for="cardnum"> Card Number
+                      <input type="number" name="payment" id="cardnum" placeholder="0000 0000 0000 0000" class="textInput payForm"></label>
+
+                      <label for="expiryDate"> Expiry Date 
+                        <input type="month" name="payment" id="expiryDate"placeholder="MM/YY" class="textInput payForm"></label>
+
+                        <label for="cvv"> CVV 
+                          <input type="password" name="payment" id="cvv" placeholder="000" class="textInput payForm"></label>
+
+                          <div class="basicFlex">
+                            <button class="button" type="submit">Submit</button>
+                            <button class="resetBut" type="reset">Reset</button>
+                          </div><!-- End of basicFlex div -->
+
+                        </form>
+
+
+                      </section>
+
+                      <section class="element" id="checkout">
+                        <h3>Checkout Cart</h3>
+
+                        <h2>Your Cart</h2>
+                        <div id="checkoutPage">
+                        <div id="cart">
+                          <div class="cartItem">
+                            <!-- Cart Header -->
+                            <h4 class="checkoutHeader">Item</h4>
+                            <h4 class="checkoutHeader">Description</h4>
+                            <h4 class="checkoutHeader">Price</h4>
+                            <h4 class="checkoutHeader">Quantity</h4>
+
+                            <!-- First Item in Cart -->
+                            <img class="cartImg"src="https://m.media-amazon.com/images/I/819CtUXMphL.jpg"alt="blue dog collar" title="Blueberry pet classic dog collar">
+                            <h3>Blueberry Pet Classic Dog Collar</h3>
+                            <h4>$36.58</h4>
+                            <input type="number" name="cartItem" id="quantity1" class="cartQuantity" min="1" value="1" size="4">
+
+                          </div><!-- end of cartItem 1-->
+
+
+                          <div class="cartItem">
+                          <img class="listingImg" src="https://m.media-amazon.com/images/I/81L+i3aIu7L.jpg" alt="Heart Pet Bed for Cats or Small Dogs" title="Heart Pet Bed for Cats or Small Dogs">
+                            <h3>Heart Pet Bed for Cats or Small Dogs</h3>
+                            <h4>$78.01</h4>
+                            
+                            <input type="number" name="cartItem" id="quantity1" class="cartQuantity" min="1" value="1" size="4">
+                          </div><!-- end of cartItem2 -->
+
+                        </div> <!-- end of cart div -->
+
+                        <div id="checkout">
+                          <h2>Checkout</h2>
+                          <button class="button">Return to Store </button>
+                          <Button class="button">Continue to Checkout</Button>
+                        </div><!-- end of checkout div -->
+                      </div> <!-- end of checkoutPage div -->
+                      </section>
+
+                    </section>
+                    <!-- // COMBINED ELEMENTS SECTION -->
 
 
 
-<section id="citations">
-  <h2>Citations</h2>
+                    <section id="citations">
+                      <h2>Citations</h2>
 
-  <ul>
-    <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-    <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-  </ul>
+                      <ul>
+                        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+                        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+                      </ul>
 
-</section>
-</div><!--  end of pageContent-->
+                    </section>
+                  </div><!--  end of pageContent-->
 
 
-</body>
-</html>
+                </body>
+                </html>
