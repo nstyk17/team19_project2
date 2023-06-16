@@ -1,0 +1,24 @@
+
+/*NAVIGATION BAR*/
+
+nav{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.title{
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+.searchElement{
+	display: flex;
+	align-items: stretch;
+}
+
+.button{
+	align-items: center;
+}
+

@@ -1,0 +1,27 @@
+@font-face{
+	font-family: BagelFatOne;
+	font-weight: normal;
+	font-style: normal;
+	src: url(../fonts/BagelFatOne-Regular.ttf);
+}
+
+@font-face{
+	font-family: Signika-Regular;
+	font-weight: normal;
+	font-style: normal;
+	src: url(../fonts/Signika-Regular.ttf);
+}
+
+@font-face{
+	font-family: Signika-Bold;
+	font-weight: bold;
+	font-style: normal;
+	src: url(../fonts/Signika-Bold.ttf);
+}
+
+@font-face{
+	font-family: Signika-Light;
+	font-weight: normal;
+	font-style: normal;
+	src: url(../fonts/Signika-Light.ttf);
+}
